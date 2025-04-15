@@ -1,0 +1,59 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Проекты";
+}
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1>Проекты</h1>
+        <button class="notification-btn">
+            <img class="notification-img" src="~/images/Notification.png"/>
+        </button>
+        <button class="create-project-btn">Создать новый проект</button>
+    </header>
+    <main>
+        <div class="projects-list">
+            <button class="sort-btn">Все статусы
+                <img class="sort-img" src="~/images/Sort-btn.png"/>
+            </button>
+            <div class="projects">
+                <ul>
+                    <li class="projects-header">
+                        <div class="project-item">
+                            <p class="project-name">Название проекта</p>
+                            <p class="project-status">Статус</p>
+                            <p class="project-deadline">Дедлайн</p>
+                            <p class="project-progress">Прогресс</p>
+                            <hr class="project-line" />
+                        </div>
+                    </li>
+                    <li class="projects-header">
+                        <div class="project-item">
+                            <div class="project-details">
+                                <p class="project-name">To Do list</p>
+                                <p class="project-status">В разработке</p>
+                                <p class="project-deadline">2025-02-20</p>
+                                <div class="container-progress">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            
+                            <hr class="project-line" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
